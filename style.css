@@ -1,9 +1,8 @@
 body {	
 	background-color: #F67D67;
 	color: #333333;
-  
-  height: 100%;
-  overflow: hidden;
+	height: 100%;
+	overflow: hidden;
 }
 
 @keyframes float {
