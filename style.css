@@ -1,31 +1,33 @@
-body {	
-	background-color: #F67D67;
-	color: #333333;
-	height: 100%;
-	overflow: hidden;
+body {
+  background-color: #f67d67;
+  color: #333333;
+
+  height: 100%;
+  overflow: hidden;
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 .emoji {
   position: fixed;
   top: 50%;
-  left: 52%;
-  margin-top: -50px;
-  margin-left: -100px;
-  width: 200px;
-  height: 200px;
+  left: 50%;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
 
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
+.emoji img {
+  width: 140px;
+  height: 140px;
+  transform: translate(-50%, -50%);
 }
